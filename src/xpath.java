@@ -17,7 +17,19 @@ public class xpath {
 
         // Relative xpath
 
-        driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("shirts of man");
-        driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+//        driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("shirts of man");
+//        driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+        //or operator
+        //driver.findElement(By.xpath("//input[@id='gh-ac' or @name='_nkw']")).sendKeys("shirts of women");
+        //and operator
+       // driver.findElement(By.xpath("//input[@id='gh-ac' and @name='_nkw']")).sendKeys("shirts of women");
+       // driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+
+        //driver.findElement(By.xpath("//input[contains(@name,'_n')]")).sendKeys("pants for man");
+
+//        driver.findElement(By.xpath("//input[starts-with(@name,'_n')]")).sendKeys("pants for kids");
+//        driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+        driver.findElement(By.xpath("//a[text()=' Sell']")).click();
+
     }
 }
